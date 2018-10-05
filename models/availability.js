@@ -18,6 +18,10 @@ const Availability = loader.database.define('availabilities',
       type: Sequelize.INTEGER,
       allowNull: false,
       defaultValue: 0
+    },
+    scheduleId: {
+      type: Sequelize.UUID,
+      allowNull: false
     }
   }, {
     freezeTableName: true,

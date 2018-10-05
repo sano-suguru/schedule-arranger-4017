@@ -18,6 +18,10 @@ const Schedule = loader.database.define('schedules',
       allowNull: false
     },
     createdBy: {
+      type: Sequelize.INTEGER,
+      allowNull: false
+    },
+    updatedAt: {
       type: Sequelize.DATE,
       allowNull: false
     }
